@@ -9,7 +9,7 @@ NWB format forthcoming, with both raw and pre-processed data.
 Download the data and this repository. Run "RunStatAnalyses.m" from FigureStats folder to create dot plots and run permutation tests from the paper.
 
 ## Model-based targeted dimensionality reduction (MbTDR)
-MbTDR folder contains code to fit the MbTDR model, but we highly recommend using code from the original paper by Mikio Aoi and Jonathan Pillow: https://github.com/pillowlab/mTDRdemo
+MbTDR folder contains code to fit the MbTDR model. If you are interested in using the model on your own data, we highly recommend using code from the original paper by Mikio Aoi, Valerio Mante, & Jonathan Pillow: https://github.com/pillowlab/mTDRdemo
 
 Decoding folder contains code to perform decoding analyses, given the MbTDR fit.
 
