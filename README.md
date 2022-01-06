@@ -2,7 +2,8 @@
 Analysis code used in Price et al. 2022
 
 ## Data Download
-Data from the paper (necessary to run the code) can be found in MATLAB format at ... (NWB format forthcoming)
+Data from the paper (necessary to run the code) can be found in MATLAB format in the Data folder. This is pre-processed data, along with the optimal model fit from MbTDR.  
+NWB format forthcoming, with both raw and pre-processed data.
 
 ## Example Script
 Download the data and this repository. Run "RunStatAnalyses.m" from FigureStats folder to create dot plots and run permutation tests from the paper.
