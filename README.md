@@ -13,4 +13,5 @@ MbTDR folder contains code to fit the MbTDR model, but we highly recommend using
 Decoding folder contains code to perform decoding analyses, given the MbTDR fit.
 
 ## Reference
-Price et al. 2022 Expectation violations produce error signals in mouse V1. https://www.biorxiv.org/content/10.1101/2021.12.31.474652v1
+Price, Jensen, Khoudary, Gavornik 2022: Expectation violations produce error signals in mouse V1.
+https://www.biorxiv.org/content/10.1101/2021.12.31.474652v1
