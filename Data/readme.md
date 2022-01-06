@@ -2,6 +2,8 @@
 
 Data from the paper is in this folder. For usage, see files such as RunStatAnalyses.m or DecodeWrapper.m . 
 
+The "DataForMbTDR" file contains all of the data, from 140 multi-channels, with 600 trials / channel. "DataForMbTDRDecoder" is held-out data that was not used during the MbTDR fitting procedure and reserved for decoding / estimation of explained variance. "ModelFitAIC" gives parameters and other outputs from the optimal MbTDR fit.  
+
 Variable naming conventions:  
 Z - neural data  
 X - design matrix (info on each predictor is in DesignCellCodes)  
