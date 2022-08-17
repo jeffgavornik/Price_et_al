@@ -204,31 +204,31 @@ for ss=1:2
 end
 ylabel('FR Difference (AU)');title('Figure 5d');
 
-%% Figure 6b
-allData = cell(4,1);
-for dd=1:4
-    allData{dd} = [ab(expDay==dd,1),eb(expDay==dd,1),ab(expDay==dd,2),eb(expDay==dd,2)];
-end
+% %% previous Figure 6b (from older version of the paper)
+% allData = cell(4,1);
+% for dd=1:4
+%     allData{dd} = [ab(expDay==dd,1),eb(expDay==dd,1),ab(expDay==dd,2),eb(expDay==dd,2)];
+% end
 
-results_pvals_6b = zeros(4,3); % rows are AB early, EB early, AB late, EB late
-                               % columns are days 2, 3, 4
+% results_pvals_6b = zeros(4,3); % rows are AB early, EB early, AB late, EB late
+%                                % columns are days 2, 3, 4
 
-for ii=1:4
-    for jj=2:4
-        data = [allData{1}(:,ii);allData{jj}(:,ii)]; % stack day 1 data with days 2, 3, or 4
-        day1N = sum(expDay==1);
-        results_pvals_6b(ii,jj-1) = RunPermutationTest(data,day1N);
-    end
-end
+% for ii=1:4
+%     for jj=2:4
+%         data = [allData{1}(:,ii);allData{jj}(:,ii)]; % stack day 1 data with days 2, 3, or 4
+%         day1N = sum(expDay==1);
+%         results_pvals_6b(ii,jj-1) = RunPermutationTest(data,day1N);
+%     end
+% end
 
-spots = [1,2,3,4;11,12,13,14;6,7,8,9;16,17,18,19];
+% spots = [1,2,3,4;11,12,13,14;6,7,8,9;16,17,18,19];
 
-figure;
-for ss=1:4
-    for day=1:4
-        dat = allData{day}(:,ss);
-        scatter(spots(ss,day)+normrnd(0,0.1,[length(dat),1]),dat,75,colors{day},'filled');
-        hold on;plot([spots(ss,day)-0.2,spots(ss,day)+0.2],mean(dat)*ones(1,2),'Color',[0,0,0],'LineWidth',3);
-    end
-end
-ylabel('FR (AU)');title('Figure 6b');
+% figure;
+% for ss=1:4
+%     for day=1:4
+%         dat = allData{day}(:,ss);
+%         scatter(spots(ss,day)+normrnd(0,0.1,[length(dat),1]),dat,75,colors{day},'filled');
+%         hold on;plot([spots(ss,day)-0.2,spots(ss,day)+0.2],mean(dat)*ones(1,2),'Color',[0,0,0],'LineWidth',3);
+%     end
+% end
+% ylabel('FR (AU)');title('Figure 6b');
